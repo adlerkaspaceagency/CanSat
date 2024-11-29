@@ -17,29 +17,7 @@ header {
     text-align: center;
     padding: 1em;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-}   
-
-header a:hover {
-    color: #3498db;
-    transition: color .5s ease-out;
-}
-
-.home-link {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    text-decoration: none;
 }
 
 header h1 {
@@ -137,5 +115,6 @@ header h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    line-height: 60vh;
+    align-items: center;
+    padding-bottom: 50px;
 }
