@@ -1,0 +1,155 @@
+/* Footer Styling */
+.footer {
+    background-color: #121212; /* Dark background for footer */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+.footer-logo {
+    width: 15%;
+    text-align: left;
+}
+
+.logo-image {
+    width: 100%;
+    height: auto;
+}
+
+.footer-about, .footer-contact, .footer-social {
+    width: 28%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.footer-about h3, .footer-contact h3, .footer-social h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.footer-about p, .footer-contact p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #bbb;
+}
+
+.footer-contact a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #bb86fc;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    font-size: 1.5rem; /* Adjust icon size */
+    border-radius: 50%; /* Make icons circular */
+    background-color: #444;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon i {
+    display: inline-block;
+    line-height: 1; /* Ensures proper centering */
+    font-size: 1.2rem; /* Scale icons inside */
+}
+
+.social-icon:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+
+.social-icon i {
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Footer - Media Query */
+@media (max-width: 850px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center
+        
+    }
+
+    .footer-logo {
+        width: 30%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-about, .footer-contact, .footer-social {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-logo {
+        width: 30%;
+    }
+
+    .footer-about, .footer-contact, .footer-social {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}

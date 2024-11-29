@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title ata-lang-en="About us" data-lang-sk="O nás">About us</title>
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="website icon" type="png" href="images/Cansat_Logo_04_NB.png">
+        <link rel="stylesheet" href="dark-styles.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+
+        <script src="load.js"></script>
+
+    </head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        
+        <div class="logo">
+            <a href="index.html"><img src="images/Cansat_Logo_04_NB.png" alt="logo"></a>
+        </div>
+        
+        <div class="menu">
+            <a href="index.html" data-lang-en="Home" data-lang-sk="Domov">Home</a>
+            <a href="about.html" data-lang-en="About us" data-lang-sk="O nás">About us</a>
+            <a href="our-mission.html" data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</a>
+            <a href="gallery.html" data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</a>
+            <a href="https://www.adlerka.sk" target="_blank" data-lang-en="SPŠE Adlerka" data-lang-sk="SPŠE Adlerka">SPŠE Adlerka</a>
+        </div>
+
+        <div class="right-section">
+            <li class="dropdown">
+                <a class="a" href="#" class="dropbtn" data-lang-en="Language" data-lang-sk="Jazyk">Language</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="setLanguage('sk')" data-lang-en="Slovak" data-lang-sk="Slovenčina">Slovak</a>
+                    <a href="#" onclick="setLanguage('en')" data-lang-en="English" data-lang-sk="Angličtina">English</a>
+                </div>
+            </li>
+            <button id="themeButton" type="button" data-theme-toggle aria-label="Light theme">Light</button>
+            
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <span class="cross" onclick="toggleMenu()">&#10005;</span>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <header class="header-1">
+        <h1 style="line-height: 65px;" data-lang-en="About us" data-lang-sk="O nás">About us</h1>
+    </header>
+    
+    <div class="container">
+        <main class="content">
+            <div id="about-us">
+                <p 
+                data-lang-en="We are a group of young students from Adlerka Secondary Vocational School, aged 15 to 17 years old, participating in this year’s CanSat competition. 
+                Despite the fact that we are students with different interests and goals in life, we all came together to take on this challenge in pursuit of 
+                knowledge and new experiences. All of us are very excited to embark on our first-ever space-oriented project, initiated by the European Space Agency." 
+                data-lang-sk="Sme skupina mladých študentov zo Strednej odbornej školy Adlerka vo veku 15 až 17 rokov, ktorí sa zúčastňujú na tohtoročnej súťaži CanSat. 
+                Napriek tomu, že sme študenti s rôznymi záujmami a životnými cieľmi, všetci sme sa spojili, aby sme túto výzvu prijali v túžbe získania vedomostí a nových skúseností. 
+                Všetci sa veľmi tešíme, že sa môžeme pustiť do nášho vôbec prvého projektu zameraného na vesmír, ktorý iniciovala Európska vesmírna agentúra.">
+                    We are a group of young students from Adlerka Secondary Vocational School, aged 15 to 17 years old, participating in this year’s CanSat competition. 
+                    Despite the fact that we are students with different interests and goals in life, we all came together to take on this challenge in pursuit of 
+                    knowledge and new experiences. All of us are very excited to embark on our first-ever space-oriented project, initiated by the European Space Agency.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Our Team Section -->
+    <header class="header-2">
+        <h1 style="line-height: 65px;" data-lang-en="Our team" data-lang-sk="Náš tím">Our team</h1>
+    </header>
+
+    <!-- Team Members Section -->
+    <div class="parent-1">
+        <div class="box-1">
+            <img src="images/avatar-example.svg" alt="avatar">
+            <h2>Daniel</h2>
+            <p data-lang-en="3D Design, Embedded systems" data-lang-sk="3D dizajn, vstavané systémy">3D Design, Embedded systems</p>
+        </div>
+        <div class="box-2">
+            <img src="images/avatar-example.svg" alt="avatar">
+            <h2>Adam</h2>
+            <p data-lang-en="Lead Programmer" data-lang-sk="Hlavný programátor">Lead Programmer</p>
+        </div>
+        <div class="box-3">
+            <img src="images/avatar-example.svg" alt="avatar">
+            <h2>Matej</h2>
+            <p data-lang-en="Team Leader, Radio technics, Programmer, Sponzoring" 
+            data-lang-sk="Vedúci tímu, Rádiotechnika, Programátor, Sponzoring">Team Leader, Radio technics, Programmer, Sponzoring</p>
+        </div>
+    </div>
+
+    <div class="parent-2">
+        <div class="box-4">
+            <img src="images/avatar-example.svg" alt="avatar">
+            <h2>Peter</h2>
+            <p data-lang-en="Electronics, Circuit design" data-lang-sk="Elektronika, Návrh obvodov">Electronics, Circuit design</p>
+        </div>
+        <div class="box-5">
+            <img src="images/avatar-example.svg" alt="avatar">
+            <h2>Adam</h2>
+            <p data-lang-en="Programmer" data-lang-sk="Programátor">Programmer</p>
+        </div>
+        <div class="box-6">
+            <img src="images/avatar-example.svg" alt="avatar">
+            <h2>Jaroslav</h2>
+            <p data-lang-en="Parachute design" data-lang-sk="Dizajn padáku">Parachute design</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Cansat_Logo_04_NB.png" alt="Logo" class="logo-image">
+            </div>
+
+            <div class="footer-about">
+                <h3 data-lang-en="About Us" data-lang-sk="O nás">About Us</h3>
+                <p 
+                data-lang-en="We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!" 
+                data-lang-sk="S nadšením skúmame zázraky vesmíru. Pridajte sa k nám na ceste objavovania a inovácií!">
+                    We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!
+                </p>
+            </div>
+
+            <div class="footer-contact">
+                <h3 data-lang-en="Contact Us" data-lang-sk="Kontaktujte nás">Contact Us</h3>
+                <p>Email: <a href="adlerkaspaceagency@gmail.com">adlerkaspaceagency@gmail.com</a></p>
+            </div>
+
+            <div class="footer-social">
+                <h3 data-lang-en="Follow Us" data-lang-sk="Sledujte nás">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-lang-en="&copy; 2024 Adlerka Space Agency. All Rights Reserved." 
+            data-lang-sk="&copy; 2024 Adlerka Space Agency. Všetky práva vyhradené.">
+            &copy; 2024 Adlerka Space Agency. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+    <!-- Script Section -->
+    <script src="hamburger.js"></script>
+    <script src="mode.js"></script>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</title>
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="website icon" type="png" href="images/Cansat_Logo_04_NB.png">
+        <link rel="stylesheet" href="dark-styles.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+
+        <script src="load.js"></script>
+
+    </head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        
+        <div class="logo">
+            <a href="index.html"><img src="images/Cansat_Logo_04_NB.png" alt="logo"></a>
+        </div>
+        
+        <div class="menu">
+            <a href="index.html" data-lang-en="Home" data-lang-sk="Domov">Home</a>
+            <a href="about.html" data-lang-en="About us" data-lang-sk="O nás">About us</a>
+            <a href="our-mission.html" data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</a>
+            <a href="gallery.html" data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</a>
+            <a href="https://www.adlerka.sk" target="_blank" data-lang-en="SPŠE Adlerka" data-lang-sk="SPŠE Adlerka">SPŠE Adlerka</a>
+        </div>
+
+        <div class="right-section">
+            <li class="dropdown">
+                <a class="a" href="#" class="dropbtn" data-lang-en="Language" data-lang-sk="Jazyk">Language</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="setLanguage('sk')" data-lang-en="Slovak" data-lang-sk="Slovenčina">Slovak</a>
+                    <a href="#" onclick="setLanguage('en')" data-lang-en="English" data-lang-sk="Angličtina">English</a>
+                </div>
+            </li>
+            <button id="themeButton" type="button" data-theme-toggle aria-label="Light theme">Light</button>
+            
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <span class="cross" onclick="toggleMenu()">&#10005;</span>
+        </div>
+    </nav>
+    
+    <!-- Gallery Header Section -->
+    <header>
+        <h1 data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</h1>
+    </header>
+
+    <!-- Temporary Heading for Coming Soon -->
+    <h1 class="temporary-heading" data-lang-en="COMING SOON..." data-lang-sk="UŽ ČOSKORO...">COMING SOON...</h1>
+
+    <!-- Gallery Images Section (currently commented out) -->
+    <!--
+    <div class="gallery">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+    </div>
+    -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Cansat_Logo_04_NB.png" alt="Logo" class="logo-image">
+            </div>
+
+            <div class="footer-about">
+                <h3 data-lang-en="About Us" data-lang-sk="O nás">About Us</h3>
+                <p 
+                data-lang-en="We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!" 
+                data-lang-sk="S nadšením skúmame zázraky vesmíru. Pridajte sa k nám na ceste objavovania a inovácií!">
+                    We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!
+                </p>
+            </div>
+
+            <div class="footer-contact">
+                <h3 data-lang-en="Contact Us" data-lang-sk="Kontaktujte nás">Contact Us</h3>
+                <p>Email: <a href="adlerkaspaceagency@gmail.com">adlerkaspaceagency@gmail.com</a></p>
+            </div>
+
+            <div class="footer-social">
+                <h3 data-lang-en="Follow Us" data-lang-sk="Sledujte nás">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-lang-en="&copy; 2024 Adlerka Space Agency. All Rights Reserved." 
+            data-lang-sk="&copy; 2024 Adlerka Space Agency. Všetky práva vyhradené.">
+            &copy; 2024 Adlerka Space Agency. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Section -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+
+</body>
+
+    <!-- Script Section -->
+    <script src="gallery.js"></script>
+    <script src="hamburger.js"></script>
+    <script src="mode.js"></script>
+
+</html>

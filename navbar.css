@@ -1,0 +1,218 @@
+/* Global reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    height: 70px;
+}
+ 
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    margin-top: 1px;
+    
+    
+}
+ 
+.menu {
+    display: flex;
+    gap: 20px;
+}
+.dropdown a,
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color .5s;
+}
+
+.dropdown a:hover {
+    color: #3498db;
+}
+
+.menu a:hover{
+    color: #3498db;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+ 
+.hamburger div {
+    width: 25px;
+    height: 2.5px;
+    background-color: white;
+}
+ 
+/* Cross Icon */
+.cross {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+ 
+/* Hamburger to cross (without animation) */
+.hamburger.active {
+    display: none; /* Hide hamburger when active */
+}
+ 
+.cross.active {
+    display: block; /* Show cross icon when active */
+}
+
+#themeButton {
+    margin-right: 10px;
+    border-radius: 12px;
+    border-style: solid;
+    width: 58px;
+    height: 24px;
+    color: white;
+    background: transparent;
+    border-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color .5s;
+    transition: border-color .5s;
+  }
+  
+  #themeButton:hover {
+    
+    border-color: #3498db;
+    color: #3498db;
+  
+  }
+  
+  #themeButton:active {
+    background-color: #3498db8a;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: auto; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 2;
+    white-space: nowrap; 
+    
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10.5px 12px; 
+    text-decoration: none;
+    display: block;
+    color: white;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #232323;
+    border: solid;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: #3498db;;
+  }
+  
+  .dropdown-content a:active {
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  
+  
+  .dropdown-content a::before {
+    display: none;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ 
+/* Mobile Menu - Media Query */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 60px; /* Menu appears below the navbar */
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+        z-index: 2;
+        padding: 10px 0;
+    }
+ 
+    .menu.active {
+        display: flex;
+        max-height: 500px;
+    }
+    
+    .menu a{
+        padding: 10px;
+    }
+ 
+    .hamburger {
+        display: flex;
+    }
+ 
+    .cross.active {
+        display: block;
+    }
+}
+ 
+/* Desktop Menu - Media Query */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+ 
+    .menu {
+        display: flex; /* Horizontal menu by default */
+    }
+}

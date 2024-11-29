@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</title>
+        <link rel="stylesheet" href="our-mission.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="website icon"  type="png" href="images/Cansat_Logo_04_NB.png">
+        <link rel="stylesheet" href="dark-styles.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+        
+        <script src="load.js"></script>
+        
+    </head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        
+        <div class="logo">
+            <a href="index.html"><img src="images/Cansat_Logo_04_NB.png" alt="logo"></a>
+        </div>
+        
+        <div class="menu">
+            <a href="index.html" data-lang-en="Home" data-lang-sk="Domov">Home</a>
+            <a href="about.html" data-lang-en="About us" data-lang-sk="O nás">About us</a>
+            <a href="our-mission.html" data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</a>
+            <a href="gallery.html" data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</a>
+            <a href="https://www.adlerka.sk" target="_blank" data-lang-en="SPŠE Adlerka" data-lang-sk="SPŠE Adlerka">SPŠE Adlerka</a>
+        </div>
+
+        <div class="right-section">
+            <li class="dropdown">
+                <a class="a" href="#" class="dropbtn" data-lang-en="Language" data-lang-sk="Jazyk">Language</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="setLanguage('sk')" data-lang-en="Slovak" data-lang-sk="Slovenčina">Slovak</a>
+                    <a href="#" onclick="setLanguage('en')" data-lang-en="English" data-lang-sk="Angličtina">English</a>
+                </div>
+            </li>
+            <button id="themeButton" type="button" data-theme-toggle aria-label="Light theme">Light</button>
+            
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <span class="cross" onclick="toggleMenu()">&#10005;</span>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header-1">
+        <h1 style="line-height: 65px;" data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</h1>
+    </header>
+    
+    <div class="container">            
+        <main class="content">
+            <div id="about-us">
+                <p 
+                data-lang-en="As our objective, we have chosen the vast field of “Air pollution”.  Measuring elements, such as carbon dioxide and sulfur dioxide may not seem like a very 
+                important task to do, but these elements greatly affect our environment and us. Our Earth’s temperature has been rising over the years mainly because of carbon 
+                dioxide, which is the leading gas in greenhouse gases, and sulfur dioxide, produced primarily by fossil fuels, has damaged trees and plants all over the world. 
+                Due to these facts, we are going to measure these elements and others that pollute our air. With the data collected, we want to determine the extent of the 
+                problem more accurately." 
+                data-lang-sk="Za svoj cieľ sme si zvolili rozsiahlu oblasť „Znečistenia ovzdušia“.  Meranie prvkov, ako je oxid uhličitý a oxid siričitý, sa nemusí zdať ako veľmi dôležitá úloha, 
+                ale tieto prvky výrazne ovplyvňujú naše životné prostredie a nás. Teplota na našej Zemi sa v priebehu rokov zvyšuje najmä v dôsledku emisií oxidu uhličitéh, ktorý je hlavným 
+                plynom v skleníkových plynoch, a oxid siričitý, produkovaný najmä fosílnymi palivami, poškodil stromy a rastliny na celom svete. Vzhľadom na tieto skutočnosti budeme merať tieto 
+                a ďalšie prvky, ktoré znečisťujú naše ovzdušie. Na základe zozbieraných údajov chceme určiť rozsah problému presnejšie.">
+                    As our objective, we have chosen the vast field of “Air pollution”.  Measuring elements, such as carbon dioxide and sulfur dioxide may not seem like a very 
+                    important task to do, but these elements greatly affect our environment and us. Our Earth’s temperature has been rising over the years mainly because of carbon 
+                    dioxide, which is the leading gas in greenhouse gases, and sulfur dioxide, produced primarily by fossil fuels, has damaged trees and plants all over the world. 
+                    Due to these facts, we are going to measure these elements and others that pollute our air. With the data collected, we want to determine the extent of the 
+                    problem more accurately.
+                </p>
+            </div>
+        </main>
+    </div>
+        
+
+    <div class="road">
+        <img class="road-1" 
+        data-img-en="images/road-to-success-en-full.png"
+        data-img-sk="images/road-to-success-sk-full.png"
+        src="images/road-to-success-en-full.png" 
+        alt="road-full-1">
+
+        <img class="road-2" 
+        src="images/road-to-success-sk-half.png"
+        data-img-en="images/road-to-success-en-half.png"
+        data-img-sk="images/road-to-success-sk-half.png"
+        alt="road-half-2">
+    </div>
+
+
+    <!-- Influence Section -->
+    <div class="container">            
+        <main class="content">
+            <div id="about-us">
+                <h2 data-lang-en="Influence" data-lang-sk="Vplyv">Influence</h2>
+                <p 
+                data-lang-en="With this project we want to collect data with higher precision in specific locations to gain a further understanding of this problem. With already analyzed and 
+                organized data, we can then send it to responsible authorities, who could possibly use this data to adjust their readings in certain areas or update them. With a 
+                higher understanding of this issue, more suitable measures can be taken, which would positively influence us, our nature and the environment we live in." 
+                data-lang-sk="V rámci tohto projektu chceme zbierať údaje s vyššou presnosťou na konkrétnych miestach, aby sme lepšie pochopili tento problém. S už analyzovanými a 
+                usporiadanými údajmi ich potom môžeme poslať príslušným autoritám, ktoré by ich prípadne mohli použiť na úpravu svojich meraní v určitých oblastiach alebo ich 
+                aktualizovať. S lepším pochopením tejto problematiky je možné prijať vhodnejšie opatrenia, ktoré by pozitívne ovplyvnili nás, našu prírodu a prostredie, v ktorom 
+                žijeme.">
+                    With this project we want to collect data with higher precision in specific locations to gain a further understanding of this problem. With already analyzed and 
+                    organized data, we can then send it to responsible authorities, who could possibly use this data to adjust their readings in certain areas or update them. With a 
+                    higher understanding of this issue, more suitable measures can be taken, which would positively influence us, our nature and the environment we live in.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Achievements Section -->
+     <!--
+    <div class="container">
+        <div class="achievements-wrapper">
+            <h2 class="achievements-header" data-lang-en="Our Latest Achievements" data-lang-sk="Naše najnovšie úspechy">Our Latest Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3 data-lang-en="First Steps" data-lang-sk="Prvé kroky">First Steps</h3>
+                    <p class="date" data-lang-en="17 February, 2024" data-lang-sk="17. februára 2024">17 February, 2024</p>
+                    <p 
+                    data-lang-en="We launched the Adlerka Space Agency (ASA) blog to share progress on our CanSat project." 
+                    data-lang-sk="Spustili sme blog Adlerka Space Agency (ASA), aby sme sa podelili o pokrok v našom projekte CanSat.">
+                    We launched the Adlerka Space Agency (ASA) blog to share progress on our CanSat project.
+                    </p>
+                    <a href="#" class="card-link" data-lang-en="Read More" data-lang-sk="Viac">Read More</a>
+                </div>
+                <div class="achievement-card">
+                    <h3>Milestone Reached</h3>
+                    <p class="date">24 February, 2024</p>
+                    <p>Initial testing of the CanSat payload was successful, with precise sensor data collected.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+                <div class="achievement-card">
+                    <h3>Partnership Announcement</h3>
+                    <p class="date">1 March, 2024</p>
+                    <p>We announced a collaboration with a leading space research organization to expand our mission.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+                <div class="achievement-card">
+                    <h3>Educational Outreach</h3>
+                    <p class="date">8 March, 2024</p>
+                    <p>Hosted workshops for local schools to inspire students about space technology and innovation.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+                <div class="achievement-card">
+                    <h3>Prototype Success</h3>
+                    <p class="date">15 March, 2024</p>
+                    <p>The CanSat prototype successfully completed environmental tests, showcasing durability and accuracy.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+                <div class="achievement-card">
+                    <h3>Data Analysis</h3>
+                    <p class="date">22 March, 2024</p>
+                    <p>Our team analyzed the first dataset, providing actionable insights into air pollution trends.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Cansat_Logo_04_NB.png" alt="Logo" class="logo-image">
+            </div>
+
+            <div class="footer-about">
+                <h3 data-lang-en="About Us" data-lang-sk="O nás">About Us</h3>
+                <p 
+                data-lang-en="We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!" 
+                data-lang-sk="S nadšením skúmame zázraky vesmíru. Pridajte sa k nám na ceste objavovania a inovácií!">
+                    We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!
+                </p>
+            </div>
+
+            <div class="footer-contact">
+                <h3 data-lang-en="Contact Us" data-lang-sk="Kontaktujte nás">Contact Us</h3>
+                <p>Email: <a href="adlerkaspaceagency@gmail.com">adlerkaspaceagency@gmail.com</a></p>
+            </div>
+
+            <div class="footer-social">
+                <h3 data-lang-en="Follow Us" data-lang-sk="Sledujte nás">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-lang-en="&copy; 2024 Adlerka Space Agency. All Rights Reserved." 
+            data-lang-sk="&copy; 2024 Adlerka Space Agency. Všetky práva vyhradené.">
+            &copy; 2024 Adlerka Space Agency. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+    <!-- Script Section -->
+    <script src="hamburger.js"></script>
+    <script src="mode.js"></script>
+
+</html>

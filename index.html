@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title data-lang-en="Home" data-lang-sk="Domov">Home</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="website icon" type="png" href="images/Cansat_Logo_04_NB.png">
+        <link rel="stylesheet" href="dark-styles.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+
+        <script src="load.js"></script>
+
+    </head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        
+        <div class="logo">
+            <a href="index.html"><img src="images/Cansat_Logo_04_NB.png" alt="logo"></a>
+        </div>
+        
+        <div class="menu">
+            <a href="index.html" data-lang-en="Home" data-lang-sk="Domov">Home</a>
+            <a href="about.html" data-lang-en="About us" data-lang-sk="O nás">About us</a>
+            <a href="our-mission.html" data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</a>
+            <a href="gallery.html" data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</a>
+            <a href="https://www.adlerka.sk" target="_blank" data-lang-en="SPŠE Adlerka" data-lang-sk="SPŠE Adlerka">SPŠE Adlerka</a>
+        </div>
+
+        <div class="right-section">
+            <li class="dropdown">
+                <a class="a" href="#" class="dropbtn" data-lang-en="Language" data-lang-sk="Jazyk">Language</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="setLanguage('sk')" data-lang-en="Slovak" data-lang-sk="Slovenčina">Slovak</a>
+                    <a href="#" onclick="setLanguage('en')" data-lang-en="English" data-lang-sk="Angličtina">English</a>
+                </div>
+            </li>
+            <button id="themeButton" type="button" data-theme-toggle aria-label="Light theme">Light</button>
+            
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <span class="cross" onclick="toggleMenu()">&#10005;</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 >Adlerka Space Agency</h1>
+            <p>
+                <i data-lang-en="„Reaching for the stars together”" data-lang-sk="„Spoločne na ceste ku hviezdam“">„Reaching for the stars together”</i>
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <main class="content">
+
+            <!-- About Us Section -->
+            <div id="about-us">
+                <h2 data-lang-en="About us" data-lang-sk="O nás">About us</h2>
+                <p 
+                data-lang-en="We are a group of young students from Adlerka Secondary Vocational School participating in this year’s CanSat competition. 
+                Despite the fact that we are students with different interests and goals in life, we all came together to take on this challenge in pursuit of 
+                knowledge and new experiences. All of us are very excited to embark on our first-ever space-oriented project, initiated by the European Space Agency." 
+                data-lang-sk="Sme skupina mladých študentov zo Strednej odbornej školy Adlerka, ktorí sa zúčastňujú tohtoročnej súťaže CanSat. 
+                Napriek tomu, že sme študenti s rôznymi záujmami a životnými cieľmi, všetci sme sa spojili, aby sme túto výzvu prijali v túžbe získania vedomostí a 
+                nových skúseností. Všetci sa veľmi tešíme, že sa môžeme pustiť do nášho vôbec prvého vesmírne zmaeraného projektu, ktorý iniciovala Európska vesmírna agentúra.">
+                We are a group of young students from Adlerka Secondary Vocational School participating in this year’s CanSat competition. 
+                Despite the fact that we are students with different interests and goals in life, we all came together to take on this challenge in pursuit of 
+                knowledge and new experiences. All of us are very excited to embark on our first-ever space-oriented project, initiated by the European Space Agency.
+                </p>
+                <a href="about.html"><button data-lang-en="More about us" data-lang-sk="Viac o nás">More about us</button></a>
+            </div>
+
+            <!-- What is CanSat Section -->
+            <div id="about-cansat">
+                <h2 data-lang-en="What is CanSat?" data-lang-sk="Čo je to CanSat?">What is CanSat?</h2>
+                <p 
+                data-lang-en="The CanSat competition is an initiative of the European Space Agency (ESA), in which high school students make a team of up to six people and build 
+                a satellite the size of a soda can. The project simulates the process of making a real-life satellite with all challenges and hardships included, 
+                on a small scale. It is a great way for students to gain hands-on experience in various fields such as programming, technology, design and more. " 
+                data-lang-sk="Súťaž CanSat je iniciatívou Európskej vesmírnej agentúry (ESA), v rámci ktorej stredoškoláci vytvoria tím maximálne šiestich ľudí a postavia 
+                satelit veľkosti plechovky. Projekt v malom meradle simuluje proces výroby skutočnej družice so všetkými výzvami a ťažkosťami. Je to skvelý spôsob, ako môžu 
+                študenti získať praktické skúsenosti v rôznych oblastiach, ako je programovanie, technológie, dizajn a ďalšie. ">
+                    The CanSat competition is an initiative of the European Space Agency (ESA), in which high school students make a team of up to six people and build 
+                    a satellite the size of a soda can. The project simulates the process of making a real-life satellite with all challenges and hardships included, 
+                    on a small scale. It is a great way for students to gain hands-on experience in various fields such as programming, technology, design and more. 
+                </p>
+                <a href="https://cansat.esa.int" target="_blank"><button data-lang-en="Learn more" data-lang-sk="Zistite viac">Learn more</button></a>
+                <a href="https://cansat.esa.int" target="_blank"><img style="width: 100%; height: 520px; object-fit: contain; margin-bottom: 50px; border-radius: 30px;" src="images/cansat-image.png" alt=""></a>
+            </div>
+
+            <!-- Our Mission Section -->
+            <div id="mission">
+                <h2 data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</h2>
+                <p 
+                data-lang-en="As our objective, we have chosen the vast field of “Air pollution”. Measuring elements, such as carbon dioxide and sulfur dioxide may not seem like a very 
+                important task to do, but these elements greatly affect our environment and us. Due to these facts, we are going to measure these elements and others that 
+                pollute our air. With the data collected, we want to determine the extent of the problem more accurately." 
+                data-lang-sk="Za svoj cieľ sme si zvolili rozsiahlu oblasť „Znečistenie ovzdušia“. Meranie prvkov, ako je oxid uhličitý a oxid siričitý, sa nemusí zdať ako veľmi 
+                dôležitou úlohou, ale tieto prvky výrazne ovplyvňujú naše životné prostredie a nás. Vzhľadom na tieto skutočnosti budeme merať tieto prvky a ďalšie, ktoré znečisťujú 
+                naše ovzdušie. Pomocou získaných údajov chceme presnejšie určiť rozsah problému.">
+                    As our objective, we have chosen the vast field of “Air pollution”. Measuring elements, such as carbon dioxide and sulfur dioxide may not seem like a very 
+                    important task to do, but these elements greatly affect our environment and us. Due to these facts, we are going to measure these elements and others that 
+                    pollute our air. With the data collected, we want to determine the extent of the problem more accurately.
+                </p>
+                <a href="our-mission.html"><button data-lang-en="Explore more" data-lang-sk="Preskúmajte viac">Explore more</button></a>
+                <img  src="images/our-mission-main2.webp" alt="">
+            </div>
+        </main>
+    </div>
+
+    <!-- Sponsors Section (Commented out) -->
+     <section id="sponsors">
+        <h2 data-lang-en="Our Sponsors" data-lang-sk="Naši sponzori">Our Sponsors</h2>
+        <!--
+        <div class="sponsors-container">
+            <div class="sponsor-card">
+                <img src="images/sponsoring-1.webp" alt="Sponsor 1" class="sponsor-image">
+                <p class="sponsor-name">Sponsor One</p>
+            </div>
+            <div class="sponsor-card">
+                <img src="images/sponsoring-2.svg" alt="Sponsor 2" class="sponsor-image">
+                <p class="sponsor-name">Sponsor Two</p>
+            </div>
+            <div class="sponsor-card">
+                <img src="images/sponsoring-3.png" alt="Sponsor 3" class="sponsor-image">
+                <p class="sponsor-name">Sponsor Three</p>
+            </div>
+        </div> -->
+        <p class="temporary" data-lang-en="We are looking forward to your cooperation! " data-lang-sk="Tešíme sa na vašu spoluprácu!">We are looking forward to your cooperation! </p>
+    </section> 
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Cansat_Logo_04_NB.png" alt="Logo" class="logo-image">
+            </div>
+
+            <div class="footer-about">
+                <h3 data-lang-en="About Us" data-lang-sk="O nás">About Us</h3>
+                <p 
+                data-lang-en="We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!" 
+                data-lang-sk="S nadšením skúmame zázraky vesmíru. Pridajte sa k nám na ceste objavovania a inovácií!">
+                    We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!
+                </p>
+            </div>
+
+            <div class="footer-contact">
+                <h3 data-lang-en="Contact Us" data-lang-sk="Kontaktujte nás">Contact Us</h3>
+                <p>Email: <a href="adlerkaspaceagency@gmail.com">adlerkaspaceagency@gmail.com</a></p>
+            </div>
+
+            <div class="footer-social">
+                <h3 data-lang-en="Follow Us" data-lang-sk="Sledujte nás">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-lang-en="&copy; 2024 Adlerka Space Agency. All Rights Reserved." 
+            data-lang-sk="&copy; 2024 Adlerka Space Agency. Všetky práva vyhradené.">
+            &copy; 2024 Adlerka Space Agency. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+    <!-- Script Section -->
+    <script src="hamburger.js"></script>
+    <script src="mode.js"></script>
+
+</html>
