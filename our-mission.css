@@ -173,3 +173,17 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.download-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.download-link a:hover {
+    color: #bb86fc;
+}
+

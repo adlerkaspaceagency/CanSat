@@ -7,7 +7,6 @@ window.onload = function() {
     setLanguage(savedLanguage);
 };
 
-
 function setLanguage(language) {
     // Update text content for elements with language attributes
     const textElements = document.querySelectorAll('[data-lang-en]');
@@ -19,6 +18,12 @@ function setLanguage(language) {
     const imageElements = document.querySelectorAll('[data-img-en]');
     imageElements.forEach(img => {
         img.src = img.getAttribute(`data-img-${language}`);
+    });
+
+    // Update href attributes for elements with href attributes
+    const linkElements = document.querySelectorAll('[data-href-en]');
+    linkElements.forEach(link => {
+        link.href = link.getAttribute(`data-href-${language}`);
     });
     
     // Save the selected language to localStorage

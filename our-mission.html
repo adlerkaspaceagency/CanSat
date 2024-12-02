@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</title>
         <link rel="stylesheet" href="our-mission.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'> 
         <link rel="website icon"  type="png" href="images/Cansat_Logo_04_NB.png">
         <link rel="stylesheet" href="dark-styles.css">
         <link rel="stylesheet" href="navbar.css">
@@ -65,7 +65,7 @@
                 Due to these facts, we are going to measure these elements and others that pollute our air. With the data collected, we want to determine the extent of the 
                 problem more accurately." 
                 data-lang-sk="Za svoj cieľ sme si zvolili rozsiahlu oblasť „Znečistenia ovzdušia“.  Meranie prvkov, ako je oxid uhličitý a oxid siričitý, sa nemusí zdať ako veľmi dôležitá úloha, 
-                ale tieto prvky výrazne ovplyvňujú naše životné prostredie a nás. Teplota na našej Zemi sa v priebehu rokov zvyšuje najmä v dôsledku emisií oxidu uhličitéh, ktorý je hlavným 
+                ale tieto prvky výrazne ovplyvňujú naše životné prostredie a nás. Teplota na našej Zemi sa v priebehu rokov zvyšuje najmä v dôsledku emisií oxidu uhličitého, ktorý je hlavným 
                 plynom v skleníkových plynoch, a oxid siričitý, produkovaný najmä fosílnymi palivami, poškodil stromy a rastliny na celom svete. Vzhľadom na tieto skutočnosti budeme merať tieto 
                 a ďalšie prvky, ktoré znečisťujú naše ovzdušie. Na základe zozbieraných údajov chceme určiť rozsah problému presnejšie.">
                     As our objective, we have chosen the vast field of “Air pollution”.  Measuring elements, such as carbon dioxide and sulfur dioxide may not seem like a very 
@@ -115,8 +115,41 @@
         </main>
     </div>
 
+    <div class="road">
+        <img class="road-1" 
+        data-img-en="images/road-to-success-en-full.png"
+        data-img-sk="images/road-to-success-sk-full.png"
+        src="images/road-to-success-en-full.png" 
+        alt="road-full-1">
+
+        <img class="road-2" 
+        src="images/road-to-success-sk-half.png"
+        data-img-en="images/road-to-success-en-half.png"
+        data-img-sk="images/road-to-success-sk-half.png"
+        alt="road-half-2">
+    </div>
+
+    <div class="download-link">
+    <span data-lang-en="For more detailed information" data-lang-sk="Pre viac detailov">For more detailed information</span>
+    <a 
+        style="margin-left: 5px;" 
+        data-lang-en="click here" 
+        data-lang-sk="kliknite sem" 
+        data-href-en="images/Business case -CanSat.docx" 
+        data-href-sk="images/Business case -CanSat - sk.docx" 
+        href="images/Business case -CanSat.docx" 
+        download=""
+    >
+        click here
+    </a>
+</div>
+
+    
+
+
+    
+
     <!-- Achievements Section -->
-     <!--
     <div class="container">
         <div class="achievements-wrapper">
             <h2 class="achievements-header" data-lang-en="Our Latest Achievements" data-lang-sk="Naše najnovšie úspechy">Our Latest Achievements</h2>
@@ -129,8 +162,9 @@
                     data-lang-sk="Spustili sme blog Adlerka Space Agency (ASA), aby sme sa podelili o pokrok v našom projekte CanSat.">
                     We launched the Adlerka Space Agency (ASA) blog to share progress on our CanSat project.
                     </p>
-                    <a href="#" class="card-link" data-lang-en="Read More" data-lang-sk="Viac">Read More</a>
+                    <a href="first-steps.html" class="card-link" data-lang-en="Read More" data-lang-sk="Viac">Read More</a>
                 </div>
+                <!-- 
                 <div class="achievement-card">
                     <h3>Milestone Reached</h3>
                     <p class="date">24 February, 2024</p>
@@ -161,10 +195,11 @@
                     <p>Our team analyzed the first dataset, providing actionable insights into air pollution trends.</p>
                     <a href="#" class="card-link">Read More</a>
                 </div>
+                -->
             </div>
         </div>
     </div>
-    -->
+    
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -190,9 +225,20 @@
             <div class="footer-social">
                 <h3 data-lang-en="Follow Us" data-lang-sk="Sledujte nás">Follow Us</h3>
                 <div class="social-icons">
-                    <!--<a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>-->
-                    <a href="https://x.com/AdlerkaSpace" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/adlerkaspaceagency/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <ul class="wrapper">
+                        <!--<li class="icon facebook">
+                          <span class="tooltip">Facebook</span>
+                          <span><i class="fab fa-facebook-f"></i></span>
+                        </li>-->
+                        <a href="https://x.com/AdlerkaSpace" target="_blank"><li class="icon twitter">
+                            <span class="tooltip">Twitter</span>
+                            <span><i class="fab fa-x-twitter"></i></span>
+                          </li></a>
+                          <a href="https://www.instagram.com/adlerkaspaceagency/" target="_blank"><li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                          </li></a>
+                        
                 </div>
             </div>
         </div>
@@ -210,5 +256,6 @@
     <!-- Script Section -->
     <script src="hamburger.js"></script>
     <script src="mode.js"></script>
+    
 
 </html>

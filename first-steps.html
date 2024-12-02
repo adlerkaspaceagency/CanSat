@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</title>
-        <link rel="stylesheet" href="gallery.css">
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'> 
+        <title data-lang-en="Home" data-lang-sk="Domov">First-steps</title>
+        <link rel="stylesheet" href="first-steps.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>        
         <link rel="website icon" type="png" href="images/Cansat_Logo_04_NB.png">
         <link rel="stylesheet" href="dark-styles.css">
         <link rel="stylesheet" href="navbar.css">
@@ -15,7 +15,6 @@
 
     </head>
 <body>
-
     <!-- Navbar Section -->
     <nav class="navbar">
         
@@ -49,61 +48,44 @@
             <span class="cross" onclick="toggleMenu()">&#10005;</span>
         </div>
     </nav>
-    
-    <!-- Gallery Header Section -->
-    <header>
-        <h1 data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</h1>
-    </header>
 
-    <!-- Temporary Heading for Coming Soon -->
-    <h1 class="temporary-heading" data-lang-en="COMING SOON..." data-lang-sk="UŽ ČOSKORO...">COMING SOON...</h1>
-
-    <!-- Gallery Images Section (currently commented out) -->
-    <!--
-    <div class="gallery">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
+    <div class="container">
+        <div class="content">
+            <h2 data-lang-en="First Steps in Making a CanSat" data-lang-sk="Prvé kroky pri výrobe CanSatu">
+                First Steps in Making a CanSat
+            </h2>
+            <div>
+                <h3 data-lang-en="Deciding the Secondary Mission" data-lang-sk="Rozhodovanie o sekundárnej misii">
+                    Deciding the Secondary Mission
+                </h3>
+                <p data-lang-en="The secondary mission of a CanSat provides a unique opportunity to demonstrate creativity and innovation. Think about what interests your team the most. Whether it’s environmental data collection, testing a new sensor, or imaging the ground, the mission should align with your goals and capabilities." 
+                    data-lang-sk="Sekundárna misia CanSatu ponúka jedinečnú príležitosť na prejavenie kreativity a inovácií. Zamyslite sa nad tým, čo vašu tím zaujíma najviac. Či už ide o zber environmentálnych údajov, testovanie nového senzora alebo snímanie povrchu, misia by mala zodpovedať vašim cieľom a schopnostiam.">
+                    The secondary mission of a CanSat provides a unique opportunity to demonstrate creativity and innovation. Think about what interests your team the most. Whether it’s environmental data collection, testing a new sensor, or imaging the ground, the mission should align with your goals and capabilities.
+                </p>
+                <img  src="images/first-steps.jpg" alt="">
+            </div>
+            <div>
+                <h3 data-lang-en="Building the Website" data-lang-sk="Tvorba webovej stránky">
+                    Building the Website
+                </h3>
+                <p data-lang-en="A website is essential to showcase your CanSat project. It can include your team introduction, updates on your progress, and information about your mission. Use engaging visuals and keep the design clean and user-friendly. A strong online presence can attract sponsors and supporters." 
+                    data-lang-sk="Webová stránka je nevyhnutná na prezentáciu vášho projektu CanSat. Môže obsahovať predstavenie tímu, aktualizácie o vašom pokroku a informácie o vašej misii. Použite atraktívne vizuály a udržujte dizajn čistý a užívateľsky prívetivý. Silná online prítomnosť môže pritiahnuť sponzorov a podporovateľov.">
+                    A website is essential to showcase your CanSat project. It can include your team introduction, updates on your progress, and information about your mission. Use engaging visuals and keep the design clean and user-friendly. A strong online presence can attract sponsors and supporters.
+                </p>
+            </div>
+            <div>
+                <h3 data-lang-en="Getting Sponsors" data-lang-sk="Získavanie sponzorov">
+                    Getting Sponsors
+                </h3>
+                <p data-lang-en="Securing sponsorships is crucial for your project. Reach out to local businesses, tech companies, or educational organizations. Prepare a professional presentation highlighting your goals, how their support will help, and the benefits they’ll receive in return, such as publicity or community impact." 
+                    data-lang-sk="Získanie sponzorov je kľúčové pre váš projekt. Oslovte miestne podniky, technologické spoločnosti alebo vzdelávacie organizácie. Pripravte si profesionálnu prezentáciu, ktorá zdôrazní vaše ciele, ako ich podpora pomôže a aké výhody získajú na oplátku, ako napríklad publicitu alebo dopad na komunitu.">
+                    Securing sponsorships is crucial for your project. Reach out to local businesses, tech companies, or educational organizations. Prepare a professional presentation highlighting your goals, how their support will help, and the benefits they’ll receive in return, such as publicity or community impact.
+                </p>
+            </div>
+            
+        </div>
     </div>
-    -->
+    
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -153,18 +135,9 @@
             &copy; 2024 Adlerka Space Agency. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Lightbox Section -->
-    <div class="lightbox" id="lightbox">
-        <span class="close-btn" onclick="closeLightbox()">&times;</span>
-        <img id="lightbox-img" src="" alt="Lightbox Image">
-    </div>
-
 </body>
-
-    <!-- Script Section -->
-    <script src="gallery.js"></script>
-    <script src="hamburger.js"></script>
-    <script src="mode.js"></script>
+<!-- Script Section -->
+<script src="hamburger.js"></script>
+<script src="mode.js"></script>
 
 </html>
