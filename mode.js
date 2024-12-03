@@ -1,11 +1,11 @@
 function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
   // Determine the current theme setting based on local storage and system preference
   if (localStorageTheme !== null) {
-    return localStorageTheme;
+      return localStorageTheme;
   }
 
   if (systemSettingDark.matches) {
-    return "dark";
+      return "dark";
   }
 
   return "light";
@@ -21,6 +21,16 @@ function updateButton({ buttonEl, isDark }) {
 function updateThemeOnHtmlEl({ theme }) {
   // Update the theme setting on the HTML tag
   document.querySelector("html").setAttribute("data-theme", theme);
+
+  // Update image sources based on the current theme and language
+  const currentLanguage = localStorage.getItem('language') || 'en';
+  const isDarkTheme = theme === "dark";
+  const imageElements = document.querySelectorAll('[data-img-en]');
+
+  imageElements.forEach(img => {
+      const darkAttr = isDarkTheme ? `data-img-dark-${currentLanguage}` : `data-img-${currentLanguage}`;
+      img.src = img.getAttribute(darkAttr);
+  });
 }
 
 // On page load:

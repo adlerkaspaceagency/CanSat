@@ -57,3 +57,7 @@ body {
 [data-theme="dark"] .temporary {
    color: black;
 }
+
+[data-theme="dark"] .road {
+   background-color: black;
+}
