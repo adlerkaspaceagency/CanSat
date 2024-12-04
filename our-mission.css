@@ -75,20 +75,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
     padding: 30px 0;
+    background-color: white;
 
 }
 
-.road-1 {
+.road-img {
+    display: none;
+}
+
+
+.road-1{
     width: 100%;
     max-width: 1250px;
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+}
 
-.road-2{
+
+
+.road-2 {
     display: none;
     width: 100%;
     align-items: center;

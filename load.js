@@ -1,20 +1,6 @@
 window.onload = function() {
-    // Apply saved theme
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    document.querySelector("html").setAttribute("data-theme", savedTheme);
-
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        const themeButton = document.querySelector("[data-theme-toggle]");
-        if (themeButton) themeButton.innerText = "Light";
-    }
-
-    // Apply saved language
     const savedLanguage = localStorage.getItem('language') || 'en';
     setLanguage(savedLanguage);
-
-    // Update images for initial theme
-    updateThemeOnHtmlEl({ theme: savedTheme });
 };
 
 function setLanguage(language) {
@@ -23,21 +9,19 @@ function setLanguage(language) {
     textElements.forEach(el => {
         el.textContent = el.getAttribute(`data-lang-${language}`);
     });
-
-    // Update image sources based on the language and theme
+    
+    // Update image sources for elements with image attributes
     const imageElements = document.querySelectorAll('[data-img-en]');
-    const isDarkTheme = document.querySelector("html").getAttribute("data-theme") === "dark";
-
     imageElements.forEach(img => {
-        const baseSrc = img.getAttribute(`data-img-${language}`);
-        if (isDarkTheme) {
-            // Replace filename for dark mode
-            img.src = baseSrc.replace(/(\.png)$/, '-dark$1');
-        } else {
-            img.src = baseSrc;
-        }
+        img.src = img.getAttribute(`data-img-${language}`);
     });
 
+    // Update href attributes for elements with href attributes
+    const linkElements = document.querySelectorAll('[data-href-en]');
+    linkElements.forEach(link => {
+        link.href = link.getAttribute(`data-href-${language}`);
+    });
+    
     // Save the selected language to localStorage
     localStorage.setItem('language', language);
 }

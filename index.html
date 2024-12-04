@@ -16,39 +16,38 @@
     </head>
 <body>
 
-    <!-- Navbar Section -->
-    <nav class="navbar">
+   <!-- Navbar Section -->
+   <nav class="navbar">
         
-        <div class="logo">
-            <a href="index.html"><img src="images/Cansat_Logo_04_NB.png" alt="logo"></a>
-        </div>
-        
-        <div class="menu">
-            <a href="index.html" data-lang-en="Home" data-lang-sk="Domov">Home</a>
-            <a href="about.html" data-lang-en="About us" data-lang-sk="O nás">About us</a>
-            <a href="our-mission.html" data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</a>
-            <a href="gallery.html" data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</a>
-            <a href="https://www.adlerka.sk" target="_blank" data-lang-en="SPŠE Adlerka" data-lang-sk="SPŠE Adlerka">SPŠE Adlerka</a>
-        </div>
+    <div class="logo">
+        <a href="index.html"><img src="images/Cansat_Logo_04_NB.png" alt="logo"></a>
+    </div>
+    
+    <div class="menu">
+        <a href="index.html" data-lang-en="Home" data-lang-sk="Domov">Home</a>
+        <a href="about.html" data-lang-en="About us" data-lang-sk="O nás">About us</a>
+        <a href="our-mission.html" data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</a>
+        <a href="gallery.html" data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</a>
+        <a href="https://www.adlerka.sk" target="_blank" data-lang-en="SPŠE Adlerka" data-lang-sk="SPŠE Adlerka">SPŠE Adlerka</a>
+    </div>
 
-        <div class="right-section">
-            <li class="dropdown">
-                <a class="a" href="#" class="dropbtn" data-lang-en="Language" data-lang-sk="Jazyk">Language</a>
-                <div class="dropdown-content">
-                    <a href="#" onclick="setLanguage('sk')" data-lang-en="Slovak" data-lang-sk="Slovenčina">Slovak</a>
-                    <a href="#" onclick="setLanguage('en')" data-lang-en="English" data-lang-sk="Angličtina">English</a>
-                </div>
-            </li>
-            <button id="themeButton" type="button" data-theme-toggle aria-label="Light theme">Light</button>
-            
-            <div class="hamburger" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
+    <div class="right-section">
+        <li class="dropdown">
+            <a class="a" href="#" class="dropbtn" data-lang-en="Language" data-lang-sk="Jazyk">Language</a>
+            <div class="dropdown-content">
+                <a href="#" onclick="setLanguage('sk')" data-lang-en="Slovak" data-lang-sk="Slovenčina">Slovak</a>
+                <a href="#" onclick="setLanguage('en')" data-lang-en="English" data-lang-sk="Angličtina">English</a>
             </div>
-            <span class="cross" onclick="toggleMenu()">&#10005;</span>
+        </li>
+        
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-    </nav>
+        <span class="cross" onclick="toggleMenu()">&#10005;</span>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <div class="hero-container">
@@ -193,6 +192,6 @@
 
     <!-- Script Section -->
     <script src="hamburger.js"></script>
-    <script src="mode.js"></script>
+    
 
 </html>
