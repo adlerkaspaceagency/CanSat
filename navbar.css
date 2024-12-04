@@ -63,7 +63,8 @@ body {
 .right-section {
     display: flex;
     align-items: center;
-    width: 70px;
+    gap: 10px;
+    
     
 }
  
@@ -181,6 +182,8 @@ body {
     .cross.active {
         display: block;
     }
+
+   
 }
  
 /* Desktop Menu - Media Query */
@@ -191,5 +194,9 @@ body {
  
     .menu {
         display: flex; /* Horizontal menu by default */
+    }
+
+    .right-section {
+        width: 70px;
     }
 }
