@@ -63,7 +63,8 @@ body {
 .right-section {
     display: flex;
     align-items: center;
-    gap: 10px;
+    width: 70px;
+    
 }
  
 /* Hamburger Icon */
@@ -97,31 +98,7 @@ body {
     display: block; /* Show cross icon when active */
 }
 
-#themeButton {
-    margin-right: 10px;
-    border-radius: 12px;
-    border-style: solid;
-    width: 58px;
-    height: 24px;
-    color: white;
-    background: transparent;
-    border-color: white;
-    overflow: hidden;
-    cursor: pointer;
-    transition: color .5s;
-    transition: border-color .5s;
-  }
-  
-  #themeButton:hover {
-    
-    border-color: #3498db;
-    color: #3498db;
-  
-  }
-  
-  #themeButton:active {
-    background-color: #3498db8a;
-  }
+
 
   .dropdown {
     position: relative;
