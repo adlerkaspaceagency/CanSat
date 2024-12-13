@@ -143,9 +143,42 @@ body {
     margin-bottom: 100px;
 }
 
+#about-cansat img {
+    width: 100%;  
+    height: 520px; 
+    object-fit: contain; 
+    margin-bottom: 50px; 
+    
+}
+
+.img-container {
+    height: 520px;
+}
+/* Very Small Screens - Media Query */
+@media only screen and (max-width: 420px) {
+    #about-us img {
+        height: 30vh;
+        margin-bottom: 20px;
+    }
+}
+
+/* Very Small Screens - Media Query */
+@media only screen and (max-width: 320px) {
+    #about-us img {
+        height: 26vh;
+        margin-bottom: 20px;
+    }
+
+    .img-container {
+        height: 450px;
+        margin-top: 0px;
+    }
+}
+
+
 .content img {
     width: 100%; 
-    height: 420px; 
+    height: 500px; 
     object-fit: cover; 
     margin-bottom: 50px; 
     margin-top: 30px;
