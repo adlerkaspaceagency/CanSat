@@ -241,6 +241,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.sponsor-card a {
+    text-decoration: none;
+}
+
+.sponsor-card a:hover {
+    text-decoration: underline;
+    color: #555;
+}
  
 
  
