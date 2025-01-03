@@ -1,3 +1,4 @@
+/* Reset padding and margins */
 * {
     padding: 0;
     margin: 0;
@@ -52,7 +53,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 
 .parent-2 {
@@ -74,7 +74,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
 
 .box-1 img, .box-2 img, .box-3 img, .box-4 img, .box-5 img, .box-6 img {
@@ -82,7 +81,6 @@ body {
     height: 175px;
     object-fit: cover;
     border-radius: 50%;
-    
 }
 
 /* Responsive Design */
@@ -92,5 +90,43 @@ body {
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+    .container {
+        padding: 15px;  /* Reduce padding for smaller screens */
+    }
+    .content {
+        padding: 0 10px;  /* Adjust content padding */
+    }
+    .content div {
+        font-size: 18px;  /* Adjust font size for smaller screens */
+        line-height: 30px;  /* Adjust line height */
+    }
+    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+        width: 200px;  /* Reduce width for small screens */
+    }
+    .box-1 img, .box-2 img, .box-3 img, .box-4 img, .box-5 img, .box-6 img {
+        width: 150px;  /* Adjust image size */
+        height: 150px;  /* Adjust image size */
+    }
+}
+
+/* Very Small Screens (up to 420px) */
+@media screen and (max-width: 420px) {
+    .header-1 {
+        height: 30vh;  /* Adjust header height */
+    }
+    
+    .container {
+        padding: 10px;  /* Further reduce padding */
+    }
+    .content {
+        padding: 0 5px;  /* Further reduce padding */
+    }
+    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+        width: 180px;  /* Further reduce width for very small screens */
+    }
+    .box-1 img, .box-2 img, .box-3 img, .box-4 img, .box-5 img, .box-6 img {
+        width: 130px;  /* Adjust image size */
+        height: 130px;  /* Adjust image size */
     }
 }

@@ -57,13 +57,56 @@ body {
     line-height: 35px;
 }
 
-/* Responsive Design Styles */
-@media screen and (max-width: 700px) {
+/* Mobile Media Query for Smaller Screens (up to 800px) */
+@media only screen and (max-width: 800px) {
+    .container {
+        padding: 15px;  /* Reduce padding around main content */
+    }
     .content {
-        max-width: 100%;
-        padding: 0 10px;
+        padding: 0 10px;  /* Reduce padding on content */
+    }
+    .content h2 {
+        font-size: 2.5rem;  /* Adjust h2 size for mobile */
+        line-height: 40px;
+    }
+    .content div {
+        font-size: 18px;  /* Adjust font size for divs */
+        line-height: 30px;  /* Adjust line-height */
     }
 }
+
+/* Very Small Screens (up to 420px) */
+@media only screen and (max-width: 420px) {
+    .container {
+        padding: 10px;  /* Further reduce padding for very small screens */
+    }
+    .content {
+        padding: 0 5px;  /* Further reduce padding for very small screens */
+    }
+
+    /* Adjust the images on mobile to ensure they remain well-sized */
+    .content img {
+        height: auto;  /* Allow images to scale naturally */
+        max-height: 350px; /* Control image height on small screens */
+    }
+
+    #about-us img {
+        height: 26vh;
+        margin-bottom: 20px;
+    }
+
+    .img-container {
+        height: 450px;
+        margin-top: 0px;
+    }
+
+    /* Button adjustments for small screens */
+    .content button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
 
 /* Additional Styles */
 .paragraph-2 {

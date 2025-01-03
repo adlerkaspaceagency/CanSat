@@ -42,11 +42,20 @@
 }
 
 .content img {
-    width: 55%; 
-    height: 150px; 
+    
     object-fit: contain;
     margin: 30px auto 50px auto; 
     display: block; 
+}
+
+.performance-logo {
+    width: 55%;
+    height: 150px;  
+}
+
+.adlerka-logo {
+    width: 55%;
+    height: 225px;
 }
 
 
@@ -73,11 +82,93 @@
     background-color: rgb(133, 133, 133);
 }
 
+/* Mobile Media Query for Smaller Screens (up to 800px) */
+@media only screen and (max-width: 800px) {
+    .container {
+        padding: 15px;  /* Reduce padding around main content */
+    }
+    .content {
+        padding: 0 10px;  /* Reduce padding on content */
+    }
+    .content h2 {
+        font-size: 2.5rem;  /* Adjust font size for mobile */
+        margin-bottom: 20px;  /* Add margin for spacing */
+        margin-top: 15px;  /* Add margin to the top */
+        line-height: 40px;  /* Adjust line height */
+    }
+    .content div {
+        font-size: 18px;  /* Adjust font size for divs */
+        line-height: 30px;  /* Adjust line-height for better readability */
+        margin-bottom: 25px;  /* Add spacing between paragraphs */
+    }
+
+    .performance-logo img {
+        width: 70%;  /* Increase image size on mobile */
+        height: auto;  /* Allow images to scale naturally */
+        margin-bottom: 30px;  /* Reduce bottom margin */
+        margin-top: 20px;   /* Reduce top margin */
+    }
+
+    .content button {
+        width: 100%; /* Make button full-width on small screens */
+        padding: 12px;  /* Adjust button padding */
+        font-size: 16px;  /* Adjust font size on mobile */
+        margin-top: 15px;  /* Add space on top of button */
+    }
+
+    .adlerka-logo {
+        height: 150px;
+    }
+    
+
+}
+
+/* Very Small Screens (up to 420px) */
+@media only screen and (max-width: 420px) {
+    .container {
+        padding: 10px;  /* Further reduce padding for very small screens */
+    }
+    .content {
+        padding: 0 5px;  /* Further reduce padding for very small screens */
+    }
+
+    .content h2 {
+        font-size: 2rem;  /* Adjust font size for very small screens */
+        margin-bottom: 15px;  /* Reduce bottom margin */
+        margin-top: 10px;  /* Reduce top margin */
+        line-height: 35px;  /* Adjust line-height for compact text */
+    }
+
+    .content div {
+        
+        margin-bottom: 20px;  /* Add space between paragraphs */
+    }
+
+    .performance-logo img {
+        width: 80%;  /* Increase image size on very small screens */
+        margin-bottom: 20px; /* Reduce bottom margin */
+        margin-top: 15px;  /* Reduce top margin */
+    }
+
+    .content button {
+        width: 100%;  /* Button stays full width */
+        padding: 10px;  /* Reduce button padding */
+        font-size: 14px;  /* Adjust font size */
+        margin-top: 10px;  /* Add space on top of button */
+    }
+
+    
+}
+
+/* Adjustments for the performance logo */
 @media (max-width: 425px) {
     .content a[href="https://performance.sk"] img {
         width: 80%; /* Increase the size of the logo */
         margin: 20px auto; /* Center the logo with some margin */
     }
+
+    
 }
+
 
 
