@@ -139,20 +139,19 @@ body {
     line-height: 35px;
 }
  
-.content #about-us {
-    margin-bottom: 100px;
-}
+
 
 #about-cansat img {
     width: 100%;  
     height: 520px; 
     object-fit: contain; 
-    margin-bottom: 50px; 
+   
     
 }
 
-.img-container {
+.img-container  {
     height: 520px;
+    
 }
 /* Mobile Media Query for Smaller Screens (up to 800px) */
 @media only screen and (max-width: 800px) {
@@ -168,6 +167,7 @@ body {
     .content div {
         font-size: 18px;  /* Adjust font size for divs */
         line-height: 30px;  /* Adjust line-height */
+        
     }
 }
 
@@ -180,16 +180,20 @@ body {
         padding: 0 5px;  /* Further reduce padding for very small screens */
     }
 
+    .content div {
+        margin-bottom: 0px;
+    }
+
     /* Adjust the images on mobile to ensure they remain well-sized */
     .content img {
         height: auto;  /* Allow images to scale naturally */
         max-height: 350px; /* Control image height on small screens */
-        
+        margin-bottom: 10px; /* Decrease margin-bottom for the images */
     }
 
     #about-us img {
         height: 26vh;
-        margin-bottom: 20px;
+        margin-bottom: 5px;  /* Reduce margin-bottom for the first image */
     }
 
     .img-container {
@@ -197,19 +201,27 @@ body {
         margin-top: 0px;
     }
 
-    /* Button adjustments for small screens */
-    .content button {
-        width: 100%;
-        padding: 15px;
-    }
+    
 }
+    #about-us img {
+        height: 26vh;
+        
+    }
+
+    .img-container {
+        height: 450px;
+        margin-top: 0px;
+    }
+
+    
+
 
 
 .content img {
     width: 100%; 
     height: 500px; 
     object-fit: cover; 
-    margin-bottom: 50px; 
+    
     margin-top: 30px;
 }
 
