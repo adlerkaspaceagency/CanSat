@@ -145,13 +145,19 @@ body {
     width: 100%;  
     height: 520px; 
     object-fit: contain; 
-   
     
 }
 
 .img-container  {
     height: 520px;
     
+}
+
+/* Increase margin-bottom of mission image for laptop and desktop screens */
+@media only screen and (min-width: 425px) {
+    #mission h2 {
+        margin-top: 175px; /* Adjust this value as needed */
+    }
 }
 /* Mobile Media Query for Smaller Screens (up to 800px) */
 @media only screen and (max-width: 800px) {
@@ -203,6 +209,8 @@ body {
 
     
 }
+
+
     #about-us img {
         height: 43vh;
         
