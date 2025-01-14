@@ -1,13 +1,13 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 body {
     font-family: Arial, sans-serif;
 }
- 
 
 /* Hero Section */
 .hero-container {
@@ -23,7 +23,7 @@ body {
     overflow: hidden;
     padding: 0 20px;
 }
- 
+
 .hero-video {
     position: absolute;
     width: 100%;
@@ -33,7 +33,7 @@ body {
     left: 0;
     z-index: -1;
 }
- 
+
 .hero-content {
     position: relative;
     z-index: 1;
@@ -42,19 +42,19 @@ body {
     max-width: 90%;
     padding: 0 20px;
 }
- 
+
 .hero-content h1 {
     font-size: 5vw;
     margin-bottom: 15px;
     line-height: 1.2;
 }
- 
+
 .hero-content p {
     font-size: 3vw;
     line-height: 1.5;
     padding: 0 10%;
 }
- 
+
 .hero-content button {
     background: none;
     border: 2px solid white;
@@ -64,67 +64,72 @@ body {
     min-width: 30%;
     margin: 15px 0;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
- 
+
+.hero-content button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* Mobile Hero Section - Media Query */
 @media only screen and (max-width: 800px) {
     .hero-container {
         height: 70vh;
     }
- 
+
     .hero-content h1 {
         font-size: 8vw;
         margin-bottom: 10px;
     }
- 
+
     .hero-content p {
         font-size: 4.5vw;
         padding: 0 15%;
     }
- 
+
     .hero-content button {
         width: 60%;
         font-size: 1rem;
         padding: 15px 30px;
     }
 }
- 
+
 /* Very Small Screens - Media Query */
 @media only screen and (max-width: 600px) {
     .hero-container {
         height: 60vh;
     }
- 
+
     .hero-content h1 {
         font-size: 12vw;
         margin-bottom: 5px;
     }
- 
+
     .hero-content p {
         font-size: 5vw;
         padding: 0 10px;
     }
- 
+
     .hero-content button {
         width: 80%;
         font-size: 1rem;
         padding: 15px 25px;
     }
 }
- 
+
 /* Main Content Section */
 .container {
     display: flex;
     padding: 30px;
     justify-content: center;
 }
- 
+
 .content {
     max-width: 800px;
     text-align: justify;
     padding: 0 16px;
 }
- 
+
 .content h2 {
     font-size: 3rem;
     margin-bottom: 28px;
@@ -132,104 +137,33 @@ body {
     text-align: left;
     line-height: 50px;
 }
- 
+
 .content div {
     margin-bottom: 40px;
     font-size: 20px;
     line-height: 35px;
 }
- 
 
-
+/* Image and Button Styling */
 #about-cansat img {
     width: 100%;  
     height: 520px; 
     object-fit: contain; 
-    
+    transition: scale 0.5s;
 }
 
-.img-container  {
+#about-cansat img:hover {
+    scale: 1.1;
+}
+
+.img-container {
     height: 520px;
-    
 }
-
-/* Increase margin-bottom of mission image for laptop and desktop screens */
-@media only screen and (min-width: 425px) {
-    #mission h2 {
-        margin-top: 175px; /* Adjust this value as needed */
-    }
-}
-/* Mobile Media Query for Smaller Screens (up to 800px) */
-@media only screen and (max-width: 800px) {
-    .container {
-        padding: 15px;  /* Reduce padding around main content */
-    }
-    .content {
-        padding: 0 10px;  /* Reduce padding on content */
-    }
-    .content h2 {
-        font-size: 2.5rem;  /* Adjust h2 size for mobile */
-    }
-    .content div {
-        font-size: 18px;  /* Adjust font size for divs */
-        line-height: 30px;  /* Adjust line-height */
-        
-    }
-}
-
-/* Very Small Screens (up to 420px) */
-@media only screen and (max-width: 420px) {
-    .container {
-        padding: 10px;  /* Further reduce padding for very small screens */
-    }
-    .content {
-        padding: 0 5px;  /* Further reduce padding for very small screens */
-    }
-
-    .content div {
-        margin-bottom: 0px;
-    }
-
-    /* Adjust the images on mobile to ensure they remain well-sized */
-    .content img {
-        height: auto;  /* Allow images to scale naturally */
-        max-height: 350px; /* Control image height on small screens */
-        margin-bottom: 10px; /* Decrease margin-bottom for the images */
-    }
-
-    #about-us img {
-        height: 26vh;
-        margin-bottom: 5px;  /* Reduce margin-bottom for the first image */
-    }
-
-    .img-container {
-        height: 450px;
-        margin-top: 0px;
-    }
-
-    
-}
-
-
-    #about-us img {
-        height: 43vh;
-        
-    }
-
-    .img-container {
-        height: 450px;
-        margin-top: 0px;
-    }
-
-    
-
-
 
 .content img {
     width: 100%; 
     height: 500px; 
     object-fit: cover; 
-    
     margin-top: 30px;
 }
 
@@ -243,7 +177,7 @@ body {
     border: none;
     margin-top: 20px;
     cursor: pointer;
-    transition: background-color .5s;
+    transition: background-color 0.5s;
 }
 
 .content button:hover {
@@ -253,12 +187,6 @@ body {
 .content button:active {
     background-color: rgb(133, 133, 133);
 }
-#about-cansat img{
-    transition: scale .5s;
-}
-#about-cansat img:hover {
-    scale: 1.1;
-}
 
 /* Sponsor Section Styling */
 #sponsors {
@@ -267,21 +195,20 @@ body {
     padding-bottom: 70px;
     text-align: center;
 }
- 
+
 #sponsors h2 {
     font-size: 3rem;
     margin-bottom: 35px;
     color: #333;
 }
- 
+
 .sponsors-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 25px;
-    
 }
- 
+
 .sponsor-card {
     padding: 15px;
     max-width: 300px;
@@ -299,23 +226,64 @@ body {
     text-decoration: underline;
     color: #555;
 }
- 
 
- 
 .sponsor-image {
     width: 100%;
     height: auto;
     border-radius: 6px;
     margin-bottom: 10px;
 }
- 
+
 .sponsor-name {
     font-size: 1.1rem;
     font-weight: bold;
     color: #555;
 }
 
-.temporary {
-    font-size: 2rem;
+/* Media Queries for Responsive Design */
+@media only screen and (min-width: 425px) {
+    #mission h2 {
+        margin-top: 175px;
+    }
 }
 
+@media only screen and (max-width: 800px) {
+    .container {
+        padding: 15px;
+    }
+    .content {
+        padding: 0 10px;
+    }
+    .content h2 {
+        font-size: 2.5rem;
+    }
+    .content div {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .container {
+        padding: 10px;
+    }
+    .content {
+        padding: 0 5px;
+    }
+    .content div {
+        margin-bottom: 0px;
+    }
+    .content img {
+        height: auto;
+        max-height: 350px;
+        margin-bottom: 10px;
+    }
+    #about-us img {
+        height: 26vh;
+        margin-bottom: 5px;
+    }
+    .img-container {
+        height: 450px;
+        margin-top: 0px;
+    }
+}
