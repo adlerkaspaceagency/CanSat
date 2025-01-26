@@ -27,11 +27,13 @@
 }
  
 .content div {
-    
     font-size: 20px;
     line-height: 35px;
 }
- 
+
+.upper-div {
+    margin-top: 20px;
+}
 
 
 .content img {
