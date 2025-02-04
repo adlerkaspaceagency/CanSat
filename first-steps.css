@@ -69,72 +69,69 @@
     background-color: rgb(133, 133, 133);
 }
 
-/* Mobile Media Query for Smaller Screens (up to 800px) */
 @media only screen and (max-width: 800px) {
     .container {
-        padding: 15px;  /* Reduce padding around main content */
+        padding: 15px;  
     }
     .content {
-        padding: 0 10px;  /* Reduce padding on content */
+        padding: 0 10px;  
     }
     .content h2 {
-        font-size: 2.5rem;  /* Adjust h2 size for mobile */
-        margin-bottom: 20px;  /* Add margin for spacing */
-        margin-top: 15px;  /* Add margin to the top */
-        line-height: 40px;  /* Adjust line height */
+        font-size: 2.5rem;  
+        margin-bottom: 20px;  
+        margin-top: 15px;  
+        line-height: 40px;  
     }
     .content div {
-        font-size: 18px;  /* Adjust font size for divs */
-        line-height: 30px;  /* Adjust line-height for better readability */
-        margin-bottom: 25px;  /* Add spacing between paragraphs */
+        font-size: 18px;  
+        line-height: 30px; 
     }
 
     .content img {
-        height: auto;  /* Allow images to scale naturally */
-        max-height: 350px; /* Limit image height on mobile */
-        margin-bottom: 30px; /* Reduce bottom margin */
-        margin-top: 20px;   /* Reduce top margin */
+        height: auto;  
+        max-height: 350px; 
+        margin-bottom: 30px; 
+        margin-top: 30px;   
     }
 
     .content button {
-        width: 100%; /* Make button full-width on small screens */
-        padding: 12px;  /* Adjust button padding */
-        font-size: 16px;  /* Adjust font size on mobile */
-        margin-top: 15px;  /* Add space on top of button */
+        width: 100%; 
+        padding: 12px;  
+        font-size: 16px;  
+        margin-top: 15px;  
     }
 }
 
-/* Very Small Screens (up to 420px) */
 @media only screen and (max-width: 420px) {
     .container {
-        padding: 10px;  /* Further reduce padding for very small screens */
+        padding: 10px;  
     }
     .content {
-        padding: 0 5px;  /* Further reduce padding for very small screens */
+        padding: 0 5px;  
     }
 
     .content h2 {
-        font-size: 2rem;  /* Adjust font size for very small screens */
-        margin-bottom: 15px;  /* Reduce bottom margin */
-        margin-top: 10px;  /* Reduce top margin */
-        line-height: 35px;  /* Adjust line-height for compact text */
+        font-size: 2rem;  
+        margin-bottom: 15px;  
+        margin-top: 10px;  
+        line-height: 35px;  
     }
 
     .content div {
         
-        margin-bottom: 20px;  /* Add space between paragraphs */
+        margin-bottom: 20px;  
     }
 
     .content img {
-        max-height: 300px; /* Adjust image height further */
-        margin-bottom: 20px; /* Reduce bottom margin */
-        margin-top: 15px;  /* Reduce top margin */
-    }
+        max-height: 300px; 
+        margin-bottom: 20px; 
+        margin-top: 15px;  
 
     .content button {
-        width: 100%;  /* Button stays full width */
-        padding: 10px;  /* Reduce button padding */
-        font-size: 14px;  /* Adjust font size */
-        margin-top: 10px;  /* Add space on top of button */
+        width: 100%;  
+        padding: 10px;  
+        font-size: 14px;  
+        margin-top: 10px; 
     }
+}
 }
