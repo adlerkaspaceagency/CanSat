@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title data-lang-en="Improving and Advancing" data-lang-sk="Zlepšovanie a pokrok">Improving and Advancing</title>
+        <link rel="stylesheet" href="improvements.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>        
+        <link rel="website icon" type="png" href="images/Cansat_Logo_04_NB.png">
+        <link rel="stylesheet" href="dark-styles.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+
+        <script src="load.js"></script>
+
+    </head>
+<body>
+   <!-- Navbar Section -->
+   <nav class="navbar">
+        
+    <div class="logo">
+        <a href="index.html"><img src="images/Cansat_Logo_04_NB.png" alt="logo"></a>
+    </div>
+    
+    <div class="menu">
+        <a href="index.html" data-lang-en="Home" data-lang-sk="Domov">Home</a>
+        <a href="about.html" data-lang-en="About us" data-lang-sk="O nás">About us</a>
+        <a href="our-mission.html" data-lang-en="Our mission" data-lang-sk="Naša misia">Our mission</a>
+        <a href="gallery.html" data-lang-en="Gallery" data-lang-sk="Galéria">Gallery</a>
+        <a href="https://www.adlerka.sk" target="_blank" data-lang-en="SPŠE Adlerka" data-lang-sk="SPŠE Adlerka">SPŠE Adlerka</a>
+    </div>
+
+    <div class="right-section">
+        <li class="dropdown">
+            <a class="a" href="#" class="dropbtn" data-lang-en="Language" data-lang-sk="Jazyk">Language</a>
+            <div class="dropdown-content">
+                <a href="#" onclick="setLanguage('sk')" data-lang-en="Slovak" data-lang-sk="Slovenčina">Slovak</a>
+                <a href="#" onclick="setLanguage('en')" data-lang-en="English" data-lang-sk="Angličtina">English</a>
+            </div>
+        </li>
+        
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <span class="cross" onclick="toggleMenu()">&#10005;</span>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="content">
+            <h2 data-lang-en="Improving and Advancing" data-lang-sk="Zlepšovanie a pokrok">
+                Improving and Advancing
+            </h2>
+            <div>
+                <p data-lang-en="Every project comes with its breakthroughs and challenges, and ours is no exception. As we move forward, we’re tackling further adjustments, testing, and a few unexpected fixes along the way. Look at how far we have come." 
+                    data-lang-sk="Každý projekt prináša svoje prelomové momenty aj výzvy, a ten náš nie je výnimkou. Ako postupujeme ďalej, pracujeme na ďalších úpravách, testovaní a riešení niekoľkých neočakávaných problémov. Pozrite sa, ako ďaleko sme sa dostali.">
+                    Every project comes with its breakthroughs and challenges, and ours is no exception. As we move forward, we’re tackling further adjustments, testing, and a few unexpected fixes along the way. Look at how far we have come.                </p>
+                <img  src="images/peto-dano.jpg" alt="">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <p data-lang-en="We’ve made great progress with our Grafana dashboards fully set up, providing a clear way to visualize sensor data in real time. On the software side, sensor code is more than halfway done, with the GPS and BMP sensors (measuring temperature, altitude and pressure) already tested and working. Other sensors are still being tested, and we’re making improvements along the way. Our LoRa communication module has its basic configuration set, but more coding and testing is needed to make sure data transmission is stable." 
+                    data-lang-sk="Dosiahli sme veľký pokrok – naše Grafana dashboardy sú plne pripravené, čo nám poskytuje jasný spôsob vizualizácie údajov zo senzorov v reálnom čase. Na softvérovej strane máme viac ako polovicu kódu pre senzory hotovú a GPS aj BMP senzory (merajúce teplotu, nadmorskú výšku a tlak) už prešli úspešným testovaním. Ostatné senzory sú stále vo fáze testovania a priebežne na nich robíme vylepšenia. Náš LoRa komunikačný modul má základnú konfiguráciu nastavenú, ale bude potrebné ďalšie programovanie a testovanie, aby sme zabezpečili stabilný prenos dát.">
+                    We’ve made great progress with our Grafana dashboards fully set up, providing a clear way to visualize sensor data in real time. On the software side, sensor code is more than halfway done, with the GPS and BMP sensors (measuring temperature, altitude and pressure) already tested and working. Other sensors are still being tested, and we’re making improvements along the way. Our LoRa communication module has its basic configuration set, but more coding and testing is needed to make sure data transmission is stable.
+                </p>
+            </div>
+            <div>
+                <p data-lang-en="On the hardware side, PCB design is officially underway, bringing us closer to a fully working setup. However, we hit a small roadblock – a mistake in our circuit schematic means we’ll need to redo part of it. It’s a minor setback but an important fix that will prevent further issues down the line. As for our 3D design, the initial model has been almost entirely refined, and we're making final adjustments to ensure everything fits together properly. Check out the refined model below!" 
+                    data-lang-sk="Na hardvérovej strane je návrh PCB oficiálne v procese, čo nás približuje k plne funkčnému riešeniu. Narazili sme však na menší problém – chyba v schéme obvodu znamená, že budeme musieť jej časť prerobiť. Je to drobná komplikácia, ale dôležitá oprava, ktorá nám v budúcnosti pomôže predísť väčším problémom. Čo sa týka nášho 3D modelu, jeho pôvodná verzia je takmer úplne zmenená, no vykonávame ďalšie úpravy, aby všetko do seba správne zapadalo. Pozrite sa na upravený model nižšie!">
+                    On the hardware side, PCB design is officially underway, bringing us closer to a fully working setup. However, we hit a small roadblock – a mistake in our circuit schematic means we’ll need to redo part of it. It’s a minor setback but an important fix that will prevent further issues down the line. As for our 3D design, the initial model has been almost entirely refined, and we're making final adjustments to ensure everything fits together properly. Check out the refined model below!
+                </p>
+                <img  src="images/3d-model.png" alt="">
+
+            </div>
+            <div>   
+                <p data-lang-en="With so many things moving forward at once, the complexity is growing, but so is our momentum. Next up is more testing, fine-tuning, and making sure everything works together smoothly. Stay tuned as we get closer to our goal! " 
+                    data-lang-sk="Keďže sa posúvame vo viacerých oblastiach naraz, projekt sa stáva čoraz komplexnejším, no zároveň napredujeme rýchlejšie. Ďalším krokom bude rozsiahlejšie testovanie, dolaďovanie a zabezpečenie hladkej spolupráce všetkých systémov. Zostaňte s nami, ako sa blížime k nášmu cieľu!">
+                    With so many things moving forward at once, the complexity is growing, but so is our momentum. Next up is more testing, fine-tuning, and making sure everything works together smoothly. Stay tuned as we get closer to our goal! 
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Cansat_Logo_04_NB.png" alt="Logo" class="logo-image">
+            </div>
+
+            <div class="footer-about">
+                <h3 data-lang-en="About Us" data-lang-sk="O nás">About Us</h3>
+                <p 
+                data-lang-en="We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!" 
+                data-lang-sk="S nadšením skúmame zázraky vesmíru. Pridajte sa k nám na ceste objavovania a inovácií!">
+                    We are passionate about exploring the wonders of the universe. Join us on a journey of discovery and innovation!
+                </p>
+            </div>
+
+            <div class="footer-contact">
+                <h3 data-lang-en="Contact Us" data-lang-sk="Kontaktujte nás">Contact Us</h3>
+                <p>Email: <a href="mailto:adlerkaspaceagency@gmail.com">adlerkaspaceagency@gmail.com</a></p>
+            </div>
+
+            <div class="footer-social">
+                <h3 data-lang-en="Follow Us" data-lang-sk="Sledujte nás">Follow Us</h3>
+                <div class="social-icons">
+                    <ul class="wrapper">
+                        <a href="https://www.facebook.com/groups/1029662102294957?locale=sk_SK" target="_blank">
+                            <li class="icon facebook">
+                                <span class="tooltip">Facebook</span>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                              </li>
+                        </a>
+                        <a href="https://x.com/AdlerkaSpace" target="_blank"><li class="icon twitter">
+                            <span class="tooltip">Twitter</span>
+                            <span><i class="fab fa-x-twitter"></i></span>
+                          </li></a>
+                          <a href="https://www.instagram.com/adlerkaspaceagency/" target="_blank"><li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                          </li></a>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-lang-en="&copy; 2024 Adlerka Space Agency. All Rights Reserved." 
+            data-lang-sk="&copy; 2024 Adlerka Space Agency. Všetky práva vyhradené.">
+            &copy; 2024 Adlerka Space Agency. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<!-- Script Section -->
+<script src="hamburger.js"></script>
+
+
+</html>
