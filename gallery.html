@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="gallery.css">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'> 
         <link rel="website icon" type="png" href="images/Cansat_Logo_04_NB.png">
-        <link rel="stylesheet" href="dark-styles.css">
         <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="footer.css">
 
@@ -15,7 +14,7 @@
 
     </head>
 <body>
-
+<div class="main-content">
     <!-- Navbar Section -->
     <nav class="navbar">
         
@@ -104,10 +103,12 @@
         <img src="">
         -->
     </div>
+</div>
+    
     
 
-    <!-- Footer Section -->
-    <footer class="footer">
+     <!-- Footer Section -->
+     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="images/Cansat_Logo_04_NB.png" alt="Logo" class="logo-image">
@@ -157,9 +158,9 @@
         </div>
     </footer>
 
-    <!-- Lightbox Section -->
-    <div class="lightbox" id="lightbox">
-        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    
+    <div onclick="closeLightbox()" class="lightbox" id="lightbox">
+        <span class="close-btn" >&times;</span>
         <img id="lightbox-img" src="" alt="Lightbox Image">
     </div>
 
